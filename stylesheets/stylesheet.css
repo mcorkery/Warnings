@@ -43,6 +43,54 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.top-nav-bar ul {
+  list-style: none;
+  background-color: #D0D0D0;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+.top-nav-bar li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.top-nav-bar a {
+  text-decoration: none;
+  color: #fff;
+
+}
+
+ 
+ 
+@media screen and (min-width: 600px) {
+  .top-nav-bar li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .top-nav-bar li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 30%;
+  height: 10px;
+  background-color: #D0D0D0;
+}
+
 
 /*******************************************************************************
 Theme Styles
@@ -105,6 +153,8 @@ a {
   text-decoration: none;
   color: #007edf;
   text-shadow: none;
+  display: block;
+  width: 60px;
 
   transition: color 0.5s ease;
   transition: text-shadow 0.5s ease;
@@ -287,10 +337,10 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: #D0D0D0;
-  background: -moz-linear-gradient(top, ##D0D0D0, #D0D0D0);
-  background: -webkit-linear-gradient(top, #D0D0D0, #D0D0D0);
-  background: -ms-linear-gradient(top, #373737,#D0D0D0);
+  background:  #D0D0D0;
+  background: -moz-linear-gradient(top, #D0D0D0,#D0D0D0 );
+  background: -webkit-linear-gradient(top,#D0D0D0, #D0D0D0);
+  background: -ms-linear-gradient(top,#D0D0D0,#D0D0D0);
   background: -o-linear-gradient(top, #D0D0D0, #D0D0D0);
   background: linear-gradient(top, #D0D0D0, #D0D0D0);
 }
